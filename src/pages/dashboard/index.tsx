@@ -84,7 +84,7 @@ const Dashboard = ({schedules}:scheduleList) => {
               Agenda
             </Heading>
             <Link href='/new'>
-              <Button display='flex' direction='row' gap={2} bg='gray.700' _hover={{bg: 'gray.500'}}>
+              <Button display='flex' gap={2} bg='gray.700' _hover={{bg: 'gray.500'}}>
                 <FiPlus size={20} color='#fff'/>
                 Registrar
               </Button>  

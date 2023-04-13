@@ -18,7 +18,7 @@ interface haircutItems{
 
 interface SubscriptionsProps {
   id: string,
-  status: boolean | null
+  status: string | null
 }
 
 interface haircutProps{
