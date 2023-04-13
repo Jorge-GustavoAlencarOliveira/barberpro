@@ -30,7 +30,6 @@ interface haircutProps{
 
 const EditHaircut = ({haircut, subscription}:haircutProps) => {
   const [isMobile] = useMediaQuery('(max-width: 600px)')
-  const [detail, setDetail] = React.useState<haircutItems>(haircut || {})
   const [name, setName] = React.useState(haircut?.name || '');
   const [price, setPrice] = React.useState(haircut?.price || '')
   const [disabled, setDisabled] = React.useState(haircut?.status ? 'disabled' : 'enabled');
