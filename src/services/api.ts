@@ -6,7 +6,7 @@ import { signOut } from '@/context/AuthContext';
 export function setupAPIClient(ctx = undefined){
   let cookies = parseCookies(ctx);
   const api = axios.create({
-    baseURL: 'http://localhost:3333',
+    baseURL: 'https://barber-probackend.vercel.app/',
     headers:{
       Authorization: `Bearer ${cookies['@barber.token']}`
     }
